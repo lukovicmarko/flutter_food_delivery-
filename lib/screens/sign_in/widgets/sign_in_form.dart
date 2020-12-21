@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:foodies/provider/logo_provider.dart';
+import 'package:foodies/screens/home/home_screen.dart';
 import 'package:foodies/utils/constants.dart';
 import 'package:foodies/utils/size_config.dart';
 import 'package:foodies/widgets/default_button.dart';
@@ -79,7 +80,7 @@ class _SignFormState extends State<SignForm> {
                           "assets/icons/eye.svg",
                           width: getProportionateScreenWidth(5),
                           height: getProportionateScreenHeight(5),
-                          color: kSecondaryColor,
+                          color: kPrimaryColor,
                         ),
                       ),
                     ),
@@ -121,7 +122,7 @@ class _SignFormState extends State<SignForm> {
                 horizontal: getProportionateScreenWidth(15)),
             child: DefaultButton(
               text: 'Log In',
-              onPress: () {},
+              onPress: () => Navigator.pushNamed(context, HomeScreen.routeName),
             ),
           )
         ],

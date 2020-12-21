@@ -48,8 +48,9 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding:
-            EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+        padding: EdgeInsets.symmetric(
+          horizontal: getProportionateScreenWidth(20),
+        ),
         child: Column(
           children: [
             Expanded(

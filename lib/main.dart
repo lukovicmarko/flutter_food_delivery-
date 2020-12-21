@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodies/data/categories_data.dart';
 import 'package:foodies/provider/logo_provider.dart';
 import 'package:foodies/screens/splash/splash_screen.dart';
 import 'package:foodies/utils/routes.dart';
@@ -20,6 +21,9 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           builder: (context) => LogoProvider(),
+        ),
+        ChangeNotifierProvider(
+          builder: (context) => CategoriesData(),
         ),
       ],
       child: MaterialApp(

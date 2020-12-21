@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodies/screens/home/home_screen.dart';
 import 'package:foodies/screens/sign_in/sign_in_screen.dart';
 import 'package:foodies/screens/splash/splash_screen.dart';
 
@@ -13,7 +14,7 @@ final Map<String, WidgetBuilder> routes = {
   // SignUpScreen.routeName: (context) => SignUpScreen(),
   // CompleteProfileScreen.routeName: (context) => CompleteProfileScreen(),
   // OtpScreen.routeName: (context) => OtpScreen(),
-  // HomeScreen.routeName: (context) => HomeScreen(),
+  HomeScreen.routeName: (context) => HomeScreen(),
   // DetailsScreen.routeName: (context) => DetailsScreen(),
   // CartScreen.routeName: (context) => CartScreen(),
   // ProfileScreen.routeName: (context) => ProfileScreen(),
